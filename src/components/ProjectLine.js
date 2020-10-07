@@ -15,23 +15,36 @@ const ProjectLine = ({
     // Starting values needed for the animation
     // Mapped by "visualParts" so it can work with multiple values dynamically
     // It's an array of percentage widths
-    const [widths, setWidths] = useState(
-        visualParts.map(() => {
-            return 0;
-        })
-    );
+    const [widths, setWidths] = useState([]);
     useEffect(() => {
-        // https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
-        // You need to wrap it to trigger the animation
-        requestAnimationFrame(() => {
-            // Set a new array of percentage widths based on the props
-            setWidths(
-                visualParts.map(item => {
-                    return item.percentage;
-                })
-            );
-        });
-    }, [visualParts]);
+        setWidths(
+            visualParts.map(() => {
+                return 0;
+            }))
+        setTimeout(() => {
+            requestAnimationFrame(() => {
+                setWidths(
+                    visualParts.map((item) => {
+                        return item.percentage
+                    })
+                )
+            })
+        }, 1)
+    }, [visualParts])
+
+
+    // useEffect(() => {
+    //     // https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
+    //     // You need to wrap it to trigger the animation
+    //     requestAnimationFrame(() => {
+    //         // Set a new array of percentage widths based on the props
+    //         setWidths(
+    //             visualParts.map(item => {
+    //                 return item.percentage;
+    //             })
+    //         );
+    //     });
+    // }, [widths]);
 
     return (
         <>
@@ -68,7 +81,7 @@ const ProjectLine = ({
                     // Generate key for bar with type of code and colour.
                     return (
                         <Fragment key={`${label}-key-${item.language}`}>
-                            <span className='line_language'><span style={{ color }}>● </span>{item.language}</span>
+                            <span className='line-language'><span style={{ color }}>● </span>{item.language} <span className='line-language__percent'>{item.percentage.toFixed(2)}%</span></span>
                         </ Fragment>
                     )
                 })}

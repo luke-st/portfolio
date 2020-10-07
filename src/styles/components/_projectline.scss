@@ -7,7 +7,7 @@
   
   .projectVisualPart {
     /* Number of the seconds for complete animation */
-    transition: width 5s;
+    transition: width 2s;
   }
   
   .projectLabel {
@@ -15,6 +15,11 @@
     color: darkslategray;
   }
   
-  .line_language {
-      padding: $s-size
+  .line-language {
+      padding: 0.8rem;
+      font-size: 1.4rem;
   }
+
+  .line-language__percent {
+    font-weight: lighter;
+}

@@ -32,7 +32,7 @@ const Project = ({ name, demo, description, link, languageData}) => {
         })
     }, [])
     return (
-        <div key={`${name}-container`}className='project__container'>
+        <div key={`${name}-container`} className='project__container'>
                 <p key={`${name}-name`}>{name}</p>
                 <p key={`${name}-desc`}>{description}</p>
                 <a href={demo}><PlayCircleOutlineIcon fontSize={'large'} style={demo ? { color: 'black' } : { opacity: '20%' }} /></a> <a href={link}><GitHubIcon fontSize={'large'} style={{ color: 'black' }} /></a>

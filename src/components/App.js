@@ -11,7 +11,7 @@ const App = () => {
         const dataFetch = async () => {
             const response = await fetch('https://api.github.com/users/luke-st/repos')
             if (response.status === 200) {
-                const repos = await response.json().then((json) => {
+                await response.json().then((json) => {
                     const repoData = []
                     for (const property in json) {
                         // console.log(json[property])

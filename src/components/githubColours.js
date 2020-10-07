@@ -431,6 +431,7 @@ const colours = [
 
 const githubColours = (language) => {
   let outputColour
+  // eslint-disable-next-line
   colours.map((lang) => {
     if (lang.name === language) {
       outputColour = lang.color
