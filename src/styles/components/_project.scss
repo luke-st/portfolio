@@ -1,6 +1,9 @@
 .project__container {
-  margin: 20px;
-  padding: 20px;
+  margin: $s-size;
+  padding: $s-size;
   border: 1px solid #e5e5e5;
   border-radius: 6px;
+  p {
+    margin: 0.4rem;
+  }
 }
