@@ -1,0 +1,20 @@
+.projectVisualFull {
+    display: flex;
+    /* change the value if you want different thickness */
+    height: 6px;
+    margin: 20px 0;
+  }
+  
+  .projectVisualPart {
+    /* Number of the seconds for complete animation */
+    transition: width 5s;
+  }
+  
+  .projectLabel {
+    /* Nothing here, move along */
+    color: darkslategray;
+  }
+  
+  .line_language {
+      padding: $s-size
+  }
