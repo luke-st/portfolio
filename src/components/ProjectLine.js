@@ -29,22 +29,8 @@ const ProjectLine = ({
                     })
                 )
             })
-        }, 1)
+        }, 10)
     }, [visualParts])
-
-
-    // useEffect(() => {
-    //     // https://developer.mozilla.org/en-US/docs/Web/API/window/requestAnimationFrame
-    //     // You need to wrap it to trigger the animation
-    //     requestAnimationFrame(() => {
-    //         // Set a new array of percentage widths based on the props
-    //         setWidths(
-    //             visualParts.map(item => {
-    //                 return item.percentage;
-    //             })
-    //         );
-    //     });
-    // }, [widths]);
 
     return (
         <>
@@ -75,7 +61,7 @@ const ProjectLine = ({
                     );
                 })}
             </div>
-            <div key={`${label}-key`}>
+            <div key={`${label}-key`} className={'key'}>
                 {visualParts.map((item) => {
                     let color = githubColours(item.language)
                     // Generate key for bar with type of code and colour.

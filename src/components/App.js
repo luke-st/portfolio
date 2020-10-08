@@ -4,6 +4,7 @@ import Bio from './Bio';
 import ProjectList from './ProjectList';
 import GithubContext from '../context/GithubContext';
 import githubReducer from '../reducers/github'
+import Contact from './Contact';
 
 const App = () => {
     const [repos, reposDispatch] = useReducer(githubReducer)
@@ -36,6 +37,7 @@ const App = () => {
             <Intro />
             <Bio />
             <ProjectList />
+            <Contact />
         </GithubContext.Provider>
     )
 }

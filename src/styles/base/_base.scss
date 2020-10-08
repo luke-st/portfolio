@@ -11,6 +11,12 @@ body {
     font-family: Helvetica, sans-serif;
     font-size: $m-size;
     line-height: 1.6;
+    background-color: darken($color: $dark-grey, $amount: 10);
+    color: $off-white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: $s-size;
 }
 
 button {

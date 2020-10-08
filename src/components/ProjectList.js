@@ -1,7 +1,7 @@
 import React, { useContext } from 'react'
 import Project from './Project'
 import GithubContext from '../context/GithubContext'
-import { Grid } from '@material-ui/core'
+import Grid from '@material-ui/core/Grid'
 
 const ProjectList = () => {
     const { repos } = useContext(GithubContext)

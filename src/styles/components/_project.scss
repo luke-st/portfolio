@@ -1,9 +1,21 @@
 .project__container {
+  width: 38rem;
+  height: 23rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   margin: $s-size;
   padding: $s-size;
-  border: 1px solid #e5e5e5;
+  // box-shadow: 1px 2px 3px rgba(0,0,0,.5);
+  // border: 1px solid $off-white;
   border-radius: 6px;
   p {
     margin: 0.4rem;
   }
+  background-color: $dark-grey;
+  color: $off-white;
+}
+.project__desc {
+  width: 38rem
 }
