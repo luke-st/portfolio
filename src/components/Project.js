@@ -3,6 +3,7 @@ import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
 import GitHubIcon from '@material-ui/icons/GitHub';
 
 import ProjectLine from './ProjectLine'
+import { Button } from '@material-ui/core';
 
 const Project = ({ name, demo, description, link, languageData}) => {
     const [visualParts, setVisualParts] = useState([])
@@ -36,7 +37,20 @@ const Project = ({ name, demo, description, link, languageData}) => {
             <div>
                 <p key={`${name}-name`}>{name}</p>
                 <div key={`${name}-desc`} className={'project__desc'}><p>{description}</p></div>
-                <a href={demo}><PlayCircleOutlineIcon fontSize={'large'} style={demo ? { color: 'white' } : { opacity: '20%' }} /></a> <a href={link}><GitHubIcon fontSize={'large'} style={{ color: 'white' }} /></a>
+                <div key={`${name}-buttons`} className={'project__buttons'}>
+                <Button
+                    variant='contained'
+                    style={demo ? null : { opacity: '20%' }, {margin: '0.3rem'} }
+                    startIcon={<PlayCircleOutlineIcon />}
+                    href={demo}
+                >Demo</Button>
+                <Button
+                    variant='contained'
+                    style={{margin: '0.3rem'}}
+                    startIcon={<GitHubIcon />}
+                    href={link}
+                >View Code</Button>
+                </div>
                 <ProjectLine key={`${name}-bar-container`} label={name} visualParts={visualParts} />
             </div>
         </div>

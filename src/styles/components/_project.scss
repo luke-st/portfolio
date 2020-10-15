@@ -17,5 +17,14 @@
   color: $off-white;
 }
 .project__desc {
-  width: 38rem
+  width: 38rem;
+  height: 3.2rem;
+}
+.project__buttons {
+  margin: 0.4rem;
+  margin-top: 2rem;
+}
+.project-grid {
+  background: linear-gradient(rgba(white, 0.3), rgba(white, 0) 10%) ;
+  border-radius: 6px;
 }

@@ -1,11 +1,9 @@
 .contact-buttons {
+    position: fixed;
+    left: calc(50vw - 62px) ;
     color: white;
-    position: sticky;
     display: flex;
     justify-content: center;
     align-items: center;
     bottom: $s-size;
-}
-.contact__icon {
-    
 }
