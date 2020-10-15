@@ -35,7 +35,7 @@ const Project = ({ name, demo, description, link, languageData}) => {
     return (
         <div key={`${name}-container`} className='project__container'>
             <div>
-                <p key={`${name}-name`}>{name}</p>
+                <p key={`${name}-name`} style={{fontWeight: 'bold'}}>{name}</p>
                 <div key={`${name}-desc`} className={'project__desc'}><p>{description}</p></div>
                 <div key={`${name}-buttons`} className={'project__buttons'}>
                 <Button

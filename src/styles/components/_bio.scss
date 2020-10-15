@@ -1,0 +1,16 @@
+.bio-container {
+}
+.bio-grid {
+    height: 50vh;
+    display: grid;
+    grid-template-columns: 60% 40%;
+    grid-template-rows: 1fr;
+}
+.div1 { grid-area: 1 / 1 / 2 / 2; }
+.div2 { 
+    grid-area: 1 / 2 / 2 / 3; 
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
