@@ -6,7 +6,8 @@ import Grid from '@material-ui/core/Grid'
 const ProjectList = () => {
     const { repos } = useContext(GithubContext)
     return (
-        // https://getbootstrap.com/docs/4.5/components/collapse/ Bootstrap time?
+        <>
+        <h2>Things that I've made</h2>
         <Grid container
         direction="row"
         justify="space-evenly"
@@ -17,6 +18,7 @@ const ProjectList = () => {
         <Project key={project.name} {...project} />
     ))) : null }
         </Grid>
+        </>
     )
 }
 

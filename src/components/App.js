@@ -1,4 +1,5 @@
 import React, { useEffect, useReducer } from 'react'
+import Intro from './Intro'
 import Bio from './Bio';
 import ProjectList from './ProjectList';
 import GithubContext from '../context/GithubContext';
@@ -33,6 +34,7 @@ const App = () => {
     }, [])
     return (
         <GithubContext.Provider value={{ repos }}>
+            <Intro />
             <Bio />
             <ProjectList />
             <Contact />
