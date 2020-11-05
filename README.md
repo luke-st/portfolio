@@ -6,3 +6,8 @@ My personal portfolio, currently in active development
 
 - created [ProjectLine.js](https://github.com/luke-st/ProjectLine)
 - async React Hooks
+- useReducer
+- useEffect
+- useState
+- Context API
+- Fragments
