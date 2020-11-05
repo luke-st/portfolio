@@ -17,7 +17,7 @@ const Project = ({ name, demo, description, link, languageData}) => {
     useEffect(() => {
         fetchData(languageData).then((data) => {
             const processedData = []
-            // get total off all numbers
+            // get total of all numbers
             let total = 0
             for (const property in data) {
                 total = total + data[property]

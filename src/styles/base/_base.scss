@@ -19,14 +19,7 @@ body {
     padding: $s-size;
 }
 
-button {
-    cursor: pointer;
-}
-
-button:disabled {
-    cursor: default;
-}
-
-.is-active {
-    font-weight: bold;
+.content-container {
+    margin: 0 auto;
+    max-width: 95rem;
 }

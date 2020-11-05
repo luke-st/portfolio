@@ -1,5 +1,5 @@
 .project__container {
-  width: 38rem;
+  width: 40rem;
   height: 23rem;
   display: flex;
   justify-content: center;
@@ -23,4 +23,8 @@
 .project__buttons {
   margin: 0.4rem;
   margin-top: 2rem;
+}
+.project-grid {
+  margin: 0 auto;
+  max-width: 70vw;
 }
